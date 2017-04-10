@@ -8,7 +8,7 @@ use Mix.Config
 # Configures the endpoint
 config :rsvp_web, RsvpWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "QwLrJ7w7zGxBSa88kJTIwqlQqcfl8K4lgaXocEQMo3dE/8Y1FgWvC6NCZk17GTwf",
+  secret_key_base: "kuZl9X9vf4jUZNcIAEjW8b3pUfDPl6Ya+RDWUawmxLkNi6zjI7+c33iNqPu0Sbwu",
   render_errors: [view: RsvpWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: RsvpWeb.PubSub,
            adapter: Phoenix.PubSub.PG2]

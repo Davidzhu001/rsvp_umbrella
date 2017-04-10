@@ -36,7 +36,7 @@ defmodule RsvpWeb.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_rsvp_web_key",
-    signing_salt: "2r9PO+JS"
+    signing_salt: "/dAu3Y0P"
 
   plug RsvpWeb.Router
 end

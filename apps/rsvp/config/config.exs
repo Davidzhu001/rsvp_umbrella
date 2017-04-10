@@ -10,7 +10,13 @@ use Mix.Config
 
 # You can configure for your application as:
 #
-#     config :rsvp, key: :value
+config :rsvp, Rsvp.Repo,
+    adapter: Ecto.Adapters.Postgres,
+    database: "rsvp",
+    username: "weichengzhu",
+    password: ""
+
+    config :rsvp, ecto_repos: [Rsvp.Repo]
 #
 # And access this configuration in your application as:
 #

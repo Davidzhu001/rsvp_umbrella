@@ -19,8 +19,8 @@ defmodule Rsvp.Mixfile do
   # Type "mix help compile.app" for more information
   def application do
     # Specify extra applications you'll use from Erlang/Elixir
-    [extra_applications: [:logger],
-     mod: {Rsvp.Application, []}]
+    [applications: [:logger, :postgrex, :ecto],
+     mod: {Rsvp, []}]
   end
 
   # Dependencies can be Hex packages:
@@ -37,6 +37,7 @@ defmodule Rsvp.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [{:ecto, "~> 2.1.0-rc.4"},
+    {:postgrex, "~> 1.0.0-rc.1"}]
   end
 end
